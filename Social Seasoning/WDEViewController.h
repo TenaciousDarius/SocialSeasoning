@@ -10,4 +10,8 @@
 
 @interface WDEViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *nerdButton;
+
+- (IBAction)nerdButtonTapped:(id)sender;
+
 @end

@@ -21,6 +21,8 @@
 		1141004E193A36A8001B397F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410030193A36A8001B397F /* UIKit.framework */; };
 		11410056193A36A8001B397F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11410054193A36A8001B397F /* InfoPlist.strings */; };
 		11410058193A36A8001B397F /* Social_SeasoningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410057193A36A8001B397F /* Social_SeasoningTests.m */; };
+		11410065193A435D001B397F /* Neeerd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11410064193A435D001B397F /* Neeerd.wav */; };
+		11410067193A46EA001B397F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410066193A46EA001B397F /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		11410053193A36A8001B397F /* Social SeasoningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Social SeasoningTests-Info.plist"; sourceTree = "<group>"; };
 		11410055193A36A8001B397F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11410057193A36A8001B397F /* Social_SeasoningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_SeasoningTests.m; sourceTree = "<group>"; };
+		11410064193A435D001B397F /* Neeerd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Neeerd.wav; sourceTree = "<group>"; };
+		11410066193A46EA001B397F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11410067193A46EA001B397F /* AudioToolbox.framework in Frameworks */,
 				1141002F193A36A8001B397F /* CoreGraphics.framework in Frameworks */,
 				11410031193A36A8001B397F /* UIKit.framework in Frameworks */,
 				1141002D193A36A8001B397F /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		1141002B193A36A8001B397F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11410066193A46EA001B397F /* AudioToolbox.framework */,
 				1141002C193A36A8001B397F /* Foundation.framework */,
 				1141002E193A36A8001B397F /* CoreGraphics.framework */,
 				11410030193A36A8001B397F /* UIKit.framework */,
@@ -118,6 +124,7 @@
 				11410041193A36A8001B397F /* WDEViewController.h */,
 				11410042193A36A8001B397F /* WDEViewController.m */,
 				11410044193A36A8001B397F /* Images.xcassets */,
+				11410061193A3E2E001B397F /* audio */,
 				11410033193A36A8001B397F /* Supporting Files */,
 			);
 			path = "Social Seasoning";
@@ -150,6 +157,14 @@
 				11410054193A36A8001B397F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11410061193A3E2E001B397F /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				11410064193A435D001B397F /* Neeerd.wav */,
+			);
+			name = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11410045193A36A8001B397F /* Images.xcassets in Resources */,
+				11410065193A435D001B397F /* Neeerd.wav in Resources */,
 				11410037193A36A8001B397F /* InfoPlist.strings in Resources */,
 				11410040193A36A8001B397F /* Main.storyboard in Resources */,
 			);
