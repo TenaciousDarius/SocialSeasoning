@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1141002D193A36A8001B397F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141002C193A36A8001B397F /* Foundation.framework */; };
+		1141002F193A36A8001B397F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141002E193A36A8001B397F /* CoreGraphics.framework */; };
+		11410031193A36A8001B397F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410030193A36A8001B397F /* UIKit.framework */; };
+		11410037193A36A8001B397F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11410035193A36A8001B397F /* InfoPlist.strings */; };
+		11410039193A36A8001B397F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410038193A36A8001B397F /* main.m */; };
+		1141003D193A36A8001B397F /* WDEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1141003C193A36A8001B397F /* WDEAppDelegate.m */; };
+		11410040193A36A8001B397F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141003E193A36A8001B397F /* Main.storyboard */; };
+		11410043193A36A8001B397F /* WDEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410042193A36A8001B397F /* WDEViewController.m */; };
+		11410045193A36A8001B397F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11410044193A36A8001B397F /* Images.xcassets */; };
+		1141004C193A36A8001B397F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141004B193A36A8001B397F /* XCTest.framework */; };
+		1141004D193A36A8001B397F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141002C193A36A8001B397F /* Foundation.framework */; };
+		1141004E193A36A8001B397F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410030193A36A8001B397F /* UIKit.framework */; };
+		11410056193A36A8001B397F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11410054193A36A8001B397F /* InfoPlist.strings */; };
+		11410058193A36A8001B397F /* Social_SeasoningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410057193A36A8001B397F /* Social_SeasoningTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1141004F193A36A8001B397F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11410021193A36A8001B397F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11410028193A36A8001B397F;
+			remoteInfo = "Social Seasoning";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11410029193A36A8001B397F /* Social Seasoning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Seasoning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1141002C193A36A8001B397F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1141002E193A36A8001B397F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11410030193A36A8001B397F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11410034193A36A8001B397F /* Social Seasoning-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Social Seasoning-Info.plist"; sourceTree = "<group>"; };
+		11410036193A36A8001B397F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11410038193A36A8001B397F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1141003A193A36A8001B397F /* Social Seasoning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Social Seasoning-Prefix.pch"; sourceTree = "<group>"; };
+		1141003B193A36A8001B397F /* WDEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDEAppDelegate.h; sourceTree = "<group>"; };
+		1141003C193A36A8001B397F /* WDEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDEAppDelegate.m; sourceTree = "<group>"; };
+		1141003F193A36A8001B397F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11410041193A36A8001B397F /* WDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDEViewController.h; sourceTree = "<group>"; };
+		11410042193A36A8001B397F /* WDEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDEViewController.m; sourceTree = "<group>"; };
+		11410044193A36A8001B397F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1141004A193A36A8001B397F /* Social SeasoningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Social SeasoningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1141004B193A36A8001B397F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		11410053193A36A8001B397F /* Social SeasoningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Social SeasoningTests-Info.plist"; sourceTree = "<group>"; };
+		11410055193A36A8001B397F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11410057193A36A8001B397F /* Social_SeasoningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_SeasoningTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11410026193A36A8001B397F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1141002F193A36A8001B397F /* CoreGraphics.framework in Frameworks */,
+				11410031193A36A8001B397F /* UIKit.framework in Frameworks */,
+				1141002D193A36A8001B397F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11410047193A36A8001B397F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1141004C193A36A8001B397F /* XCTest.framework in Frameworks */,
+				1141004E193A36A8001B397F /* UIKit.framework in Frameworks */,
+				1141004D193A36A8001B397F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11410020193A36A8001B397F = {
+			isa = PBXGroup;
+			children = (
+				11410032193A36A8001B397F /* Social Seasoning */,
+				11410051193A36A8001B397F /* Social SeasoningTests */,
+				1141002B193A36A8001B397F /* Frameworks */,
+				1141002A193A36A8001B397F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1141002A193A36A8001B397F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11410029193A36A8001B397F /* Social Seasoning.app */,
+				1141004A193A36A8001B397F /* Social SeasoningTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1141002B193A36A8001B397F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1141002C193A36A8001B397F /* Foundation.framework */,
+				1141002E193A36A8001B397F /* CoreGraphics.framework */,
+				11410030193A36A8001B397F /* UIKit.framework */,
+				1141004B193A36A8001B397F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11410032193A36A8001B397F /* Social Seasoning */ = {
+			isa = PBXGroup;
+			children = (
+				1141003B193A36A8001B397F /* WDEAppDelegate.h */,
+				1141003C193A36A8001B397F /* WDEAppDelegate.m */,
+				1141003E193A36A8001B397F /* Main.storyboard */,
+				11410041193A36A8001B397F /* WDEViewController.h */,
+				11410042193A36A8001B397F /* WDEViewController.m */,
+				11410044193A36A8001B397F /* Images.xcassets */,
+				11410033193A36A8001B397F /* Supporting Files */,
+			);
+			path = "Social Seasoning";
+			sourceTree = "<group>";
+		};
+		11410033193A36A8001B397F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11410034193A36A8001B397F /* Social Seasoning-Info.plist */,
+				11410035193A36A8001B397F /* InfoPlist.strings */,
+				11410038193A36A8001B397F /* main.m */,
+				1141003A193A36A8001B397F /* Social Seasoning-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11410051193A36A8001B397F /* Social SeasoningTests */ = {
+			isa = PBXGroup;
+			children = (
+				11410057193A36A8001B397F /* Social_SeasoningTests.m */,
+				11410052193A36A8001B397F /* Supporting Files */,
+			);
+			path = "Social SeasoningTests";
+			sourceTree = "<group>";
+		};
+		11410052193A36A8001B397F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11410053193A36A8001B397F /* Social SeasoningTests-Info.plist */,
+				11410054193A36A8001B397F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11410028193A36A8001B397F /* Social Seasoning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1141005B193A36A8001B397F /* Build configuration list for PBXNativeTarget "Social Seasoning" */;
+			buildPhases = (
+				11410025193A36A8001B397F /* Sources */,
+				11410026193A36A8001B397F /* Frameworks */,
+				11410027193A36A8001B397F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Social Seasoning";
+			productName = "Social Seasoning";
+			productReference = 11410029193A36A8001B397F /* Social Seasoning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11410049193A36A8001B397F /* Social SeasoningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1141005E193A36A8001B397F /* Build configuration list for PBXNativeTarget "Social SeasoningTests" */;
+			buildPhases = (
+				11410046193A36A8001B397F /* Sources */,
+				11410047193A36A8001B397F /* Frameworks */,
+				11410048193A36A8001B397F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11410050193A36A8001B397F /* PBXTargetDependency */,
+			);
+			name = "Social SeasoningTests";
+			productName = "Social SeasoningTests";
+			productReference = 1141004A193A36A8001B397F /* Social SeasoningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11410021193A36A8001B397F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WDE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Darius Elphick";
+				TargetAttributes = {
+					11410049193A36A8001B397F = {
+						TestTargetID = 11410028193A36A8001B397F;
+					};
+				};
+			};
+			buildConfigurationList = 11410024193A36A8001B397F /* Build configuration list for PBXProject "Social Seasoning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11410020193A36A8001B397F;
+			productRefGroup = 1141002A193A36A8001B397F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11410028193A36A8001B397F /* Social Seasoning */,
+				11410049193A36A8001B397F /* Social SeasoningTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11410027193A36A8001B397F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11410045193A36A8001B397F /* Images.xcassets in Resources */,
+				11410037193A36A8001B397F /* InfoPlist.strings in Resources */,
+				11410040193A36A8001B397F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11410048193A36A8001B397F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11410056193A36A8001B397F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11410025193A36A8001B397F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11410039193A36A8001B397F /* main.m in Sources */,
+				1141003D193A36A8001B397F /* WDEAppDelegate.m in Sources */,
+				11410043193A36A8001B397F /* WDEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11410046193A36A8001B397F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11410058193A36A8001B397F /* Social_SeasoningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11410050193A36A8001B397F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11410028193A36A8001B397F /* Social Seasoning */;
+			targetProxy = 1141004F193A36A8001B397F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11410035193A36A8001B397F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11410036193A36A8001B397F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1141003E193A36A8001B397F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1141003F193A36A8001B397F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11410054193A36A8001B397F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11410055193A36A8001B397F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11410059193A36A8001B397F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1141005A193A36A8001B397F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1141005C193A36A8001B397F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Social Seasoning/Social Seasoning-Prefix.pch";
+				INFOPLIST_FILE = "Social Seasoning/Social Seasoning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1141005D193A36A8001B397F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Social Seasoning/Social Seasoning-Prefix.pch";
+				INFOPLIST_FILE = "Social Seasoning/Social Seasoning-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1141005F193A36A8001B397F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Social Seasoning.app/Social Seasoning";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Social Seasoning/Social Seasoning-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Social SeasoningTests/Social SeasoningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		11410060193A36A8001B397F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Social Seasoning.app/Social Seasoning";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Social Seasoning/Social Seasoning-Prefix.pch";
+				INFOPLIST_FILE = "Social SeasoningTests/Social SeasoningTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11410024193A36A8001B397F /* Build configuration list for PBXProject "Social Seasoning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11410059193A36A8001B397F /* Debug */,
+				1141005A193A36A8001B397F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1141005B193A36A8001B397F /* Build configuration list for PBXNativeTarget "Social Seasoning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1141005C193A36A8001B397F /* Debug */,
+				1141005D193A36A8001B397F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1141005E193A36A8001B397F /* Build configuration list for PBXNativeTarget "Social SeasoningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1141005F193A36A8001B397F /* Debug */,
+				11410060193A36A8001B397F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11410021193A36A8001B397F /* Project object */;
+}
