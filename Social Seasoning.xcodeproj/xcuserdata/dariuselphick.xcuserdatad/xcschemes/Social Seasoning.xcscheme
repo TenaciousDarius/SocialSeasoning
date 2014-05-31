@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "11410028193A36A8001B397F"
-               BuildableName = "Social Seasoning.app"
+               BuildableName = "Seasoning.app"
                BlueprintName = "Social Seasoning"
                ReferencedContainer = "container:Social Seasoning.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11410028193A36A8001B397F"
-            BuildableName = "Social Seasoning.app"
+            BuildableName = "Seasoning.app"
             BlueprintName = "Social Seasoning"
             ReferencedContainer = "container:Social Seasoning.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11410028193A36A8001B397F"
-            BuildableName = "Social Seasoning.app"
+            BuildableName = "Seasoning.app"
             BlueprintName = "Social Seasoning"
             ReferencedContainer = "container:Social Seasoning.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "11410028193A36A8001B397F"
-            BuildableName = "Social Seasoning.app"
+            BuildableName = "Seasoning.app"
             BlueprintName = "Social Seasoning"
             ReferencedContainer = "container:Social Seasoning.xcodeproj">
          </BuildableReference>

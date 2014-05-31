@@ -24,6 +24,9 @@
 		11410065193A435D001B397F /* Neeerd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11410064193A435D001B397F /* Neeerd.wav */; };
 		11410067193A46EA001B397F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410066193A46EA001B397F /* AudioToolbox.framework */; };
 		11410069193A6B75001B397F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410068193A6B75001B397F /* AVFoundation.framework */; };
+		1141006F193A7786001B397F /* WDESeasoningCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1141006E193A7786001B397F /* WDESeasoningCollectionViewController.m */; };
+		11410072193A7960001B397F /* WDESocialSpiceViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410071193A7960001B397F /* WDESocialSpiceViewCell.m */; };
+		11410075193A84E3001B397F /* WDESpice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410074193A84E3001B397F /* WDESpice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		11410064193A435D001B397F /* Neeerd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Neeerd.wav; sourceTree = "<group>"; };
 		11410066193A46EA001B397F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		11410068193A6B75001B397F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1141006D193A7786001B397F /* WDESeasoningCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDESeasoningCollectionViewController.h; sourceTree = "<group>"; };
+		1141006E193A7786001B397F /* WDESeasoningCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDESeasoningCollectionViewController.m; sourceTree = "<group>"; };
+		11410070193A7960001B397F /* WDESocialSpiceViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDESocialSpiceViewCell.h; sourceTree = "<group>"; };
+		11410071193A7960001B397F /* WDESocialSpiceViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDESocialSpiceViewCell.m; sourceTree = "<group>"; };
+		11410073193A84E3001B397F /* WDESpice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDESpice.h; sourceTree = "<group>"; };
+		11410074193A84E3001B397F /* WDESpice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDESpice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +136,12 @@
 				1141003E193A36A8001B397F /* Main.storyboard */,
 				11410041193A36A8001B397F /* WDEViewController.h */,
 				11410042193A36A8001B397F /* WDEViewController.m */,
+				1141006D193A7786001B397F /* WDESeasoningCollectionViewController.h */,
+				1141006E193A7786001B397F /* WDESeasoningCollectionViewController.m */,
+				11410070193A7960001B397F /* WDESocialSpiceViewCell.h */,
+				11410071193A7960001B397F /* WDESocialSpiceViewCell.m */,
+				11410073193A84E3001B397F /* WDESpice.h */,
+				11410074193A84E3001B397F /* WDESpice.m */,
 				11410044193A36A8001B397F /* Images.xcassets */,
 				11410061193A3E2E001B397F /* audio */,
 				11410033193A36A8001B397F /* Supporting Files */,
@@ -273,6 +288,9 @@
 				11410039193A36A8001B397F /* main.m in Sources */,
 				1141003D193A36A8001B397F /* WDEAppDelegate.m in Sources */,
 				11410043193A36A8001B397F /* WDEViewController.m in Sources */,
+				11410075193A84E3001B397F /* WDESpice.m in Sources */,
+				1141006F193A7786001B397F /* WDESeasoningCollectionViewController.m in Sources */,
+				11410072193A7960001B397F /* WDESocialSpiceViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
