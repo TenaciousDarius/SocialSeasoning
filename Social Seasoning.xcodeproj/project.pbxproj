@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11410029193A36A8001B397F /* Social Seasoning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Seasoning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11410029193A36A8001B397F /* Seasoning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seasoning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141002C193A36A8001B397F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1141002E193A36A8001B397F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		11410030193A36A8001B397F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -97,7 +97,7 @@
 		1141002A193A36A8001B397F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11410029193A36A8001B397F /* Social Seasoning.app */,
+				11410029193A36A8001B397F /* Seasoning.app */,
 				1141004A193A36A8001B397F /* Social SeasoningTests.xctest */,
 			);
 			name = Products;
@@ -184,7 +184,7 @@
 			);
 			name = "Social Seasoning";
 			productName = "Social Seasoning";
-			productReference = 11410029193A36A8001B397F /* Social Seasoning.app */;
+			productReference = 11410029193A36A8001B397F /* Seasoning.app */;
 			productType = "com.apple.product-type.application";
 		};
 		11410049193A36A8001B397F /* Social SeasoningTests */ = {
@@ -396,7 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social Seasoning/Social Seasoning-Prefix.pch";
 				INFOPLIST_FILE = "Social Seasoning/Social Seasoning-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Seasoning;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,7 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Social Seasoning/Social Seasoning-Prefix.pch";
 				INFOPLIST_FILE = "Social Seasoning/Social Seasoning-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Seasoning;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
