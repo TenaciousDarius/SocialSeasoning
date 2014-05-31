@@ -23,6 +23,7 @@
 		11410058193A36A8001B397F /* Social_SeasoningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410057193A36A8001B397F /* Social_SeasoningTests.m */; };
 		11410065193A435D001B397F /* Neeerd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11410064193A435D001B397F /* Neeerd.wav */; };
 		11410067193A46EA001B397F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410066193A46EA001B397F /* AudioToolbox.framework */; };
+		11410069193A6B75001B397F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410068193A6B75001B397F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		11410057193A36A8001B397F /* Social_SeasoningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_SeasoningTests.m; sourceTree = "<group>"; };
 		11410064193A435D001B397F /* Neeerd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Neeerd.wav; sourceTree = "<group>"; };
 		11410066193A46EA001B397F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		11410068193A6B75001B397F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11410069193A6B75001B397F /* AVFoundation.framework in Frameworks */,
 				11410067193A46EA001B397F /* AudioToolbox.framework in Frameworks */,
 				1141002F193A36A8001B397F /* CoreGraphics.framework in Frameworks */,
 				11410031193A36A8001B397F /* UIKit.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		1141002B193A36A8001B397F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11410068193A6B75001B397F /* AVFoundation.framework */,
 				11410066193A46EA001B397F /* AudioToolbox.framework */,
 				1141002C193A36A8001B397F /* Foundation.framework */,
 				1141002E193A36A8001B397F /* CoreGraphics.framework */,
