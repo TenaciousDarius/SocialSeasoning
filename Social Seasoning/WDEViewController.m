@@ -41,12 +41,20 @@
     
     SystemSoundID soundId;
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundId);
+    AudioServicesAddSystemSoundCompletion(soundId,
+                                          NULL,
+                                          NULL,
+                                          HandleSystemSoundCompleted,
+                                          (__bridge_retained void *)self);
     AudioServicesPlaySystemSound(soundId);
     
 }
 
-void HandleSystemSoundCompleted(SystemSoundID soundId) {
+void HandleSystemSoundCompleted(SystemSoundID soundId, void *myself) {
 
+    NSLog(@"Handle system sound completed");
+    
+    AudioServicesRemoveSystemSoundCompletion(soundId);
     AudioServicesDisposeSystemSoundID(soundId);
     
 }
