@@ -7,6 +7,7 @@
 //
 
 #import "WDESpice.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation WDESpice
 
@@ -22,8 +23,24 @@
         NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
         self.audioURL = soundURL;
         
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,
+                                                 (unsigned long)NULL), ^(void) {
+            [self lookupAudioDurationSeconds];
+        });
+        
     }
     return self;
+    
+}
+
+- (void)lookupAudioDurationSeconds {
+    
+    AVURLAsset* audioAsset = [AVURLAsset URLAssetWithURL:self.audioURL
+                                                 options:nil];
+    CMTime audioDuration = audioAsset.duration;
+    self.audioDurationSeconds = CMTimeGetSeconds(audioDuration);
+    
+    NSLog(@"Duration seconds: %f", self.audioDurationSeconds);
     
 }
 

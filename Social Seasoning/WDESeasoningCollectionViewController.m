@@ -10,7 +10,6 @@
 #import "WDESocialSpiceViewCell.h"
 #import "WDESpice.h"
 #import <AudioToolbox/AudioToolbox.h>
-#import <AVFoundation/AVFoundation.h>
 
 @interface WDESeasoningCollectionViewController ()
 
@@ -99,12 +98,6 @@ NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
                                           NULL,
                                           HandleSystemSoundCompleted,
                                           (__bridge_retained void *)self);
-    
-    /*AVURLAsset* audioAsset = [AVURLAsset URLAssetWithURL:soundURL
-                                                 options:nil];
-    CMTime audioDuration = audioAsset.duration;
-    float audioDurationSeconds = CMTimeGetSeconds(audioDuration);
-    [self animateButtonWithDuration:audioDurationSeconds];*/
     
     AudioServicesPlaySystemSound(soundId);
     

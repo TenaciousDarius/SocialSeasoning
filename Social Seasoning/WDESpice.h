@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *spiceName;
 @property (strong, nonatomic) NSURL *audioURL;
+@property (nonatomic, assign) float audioDurationSeconds;
 
 - (WDESpice *)initSpiceWithName:(NSString *)spiceName audioName:(NSString *)audioName audioType:(NSString *)audioType;
 
