@@ -14,14 +14,13 @@
 		11410039193A36A8001B397F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410038193A36A8001B397F /* main.m */; };
 		1141003D193A36A8001B397F /* WDEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1141003C193A36A8001B397F /* WDEAppDelegate.m */; };
 		11410040193A36A8001B397F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1141003E193A36A8001B397F /* Main.storyboard */; };
-		11410043193A36A8001B397F /* WDEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410042193A36A8001B397F /* WDEViewController.m */; };
 		11410045193A36A8001B397F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11410044193A36A8001B397F /* Images.xcassets */; };
 		1141004C193A36A8001B397F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141004B193A36A8001B397F /* XCTest.framework */; };
 		1141004D193A36A8001B397F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1141002C193A36A8001B397F /* Foundation.framework */; };
 		1141004E193A36A8001B397F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410030193A36A8001B397F /* UIKit.framework */; };
 		11410056193A36A8001B397F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11410054193A36A8001B397F /* InfoPlist.strings */; };
 		11410058193A36A8001B397F /* Social_SeasoningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11410057193A36A8001B397F /* Social_SeasoningTests.m */; };
-		11410065193A435D001B397F /* Neeerd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11410064193A435D001B397F /* Neeerd.wav */; };
+		11410065193A435D001B397F /* nerd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11410064193A435D001B397F /* nerd.wav */; };
 		11410067193A46EA001B397F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410066193A46EA001B397F /* AudioToolbox.framework */; };
 		11410069193A6B75001B397F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11410068193A6B75001B397F /* AVFoundation.framework */; };
 		1141006F193A7786001B397F /* WDESeasoningCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1141006E193A7786001B397F /* WDESeasoningCollectionViewController.m */; };
@@ -51,15 +50,13 @@
 		1141003B193A36A8001B397F /* WDEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDEAppDelegate.h; sourceTree = "<group>"; };
 		1141003C193A36A8001B397F /* WDEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDEAppDelegate.m; sourceTree = "<group>"; };
 		1141003F193A36A8001B397F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11410041193A36A8001B397F /* WDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDEViewController.h; sourceTree = "<group>"; };
-		11410042193A36A8001B397F /* WDEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDEViewController.m; sourceTree = "<group>"; };
 		11410044193A36A8001B397F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1141004A193A36A8001B397F /* Social SeasoningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Social SeasoningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141004B193A36A8001B397F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		11410053193A36A8001B397F /* Social SeasoningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Social SeasoningTests-Info.plist"; sourceTree = "<group>"; };
 		11410055193A36A8001B397F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11410057193A36A8001B397F /* Social_SeasoningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_SeasoningTests.m; sourceTree = "<group>"; };
-		11410064193A435D001B397F /* Neeerd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Neeerd.wav; sourceTree = "<group>"; };
+		11410064193A435D001B397F /* nerd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nerd.wav; sourceTree = "<group>"; };
 		11410066193A46EA001B397F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		11410068193A6B75001B397F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1141006D193A7786001B397F /* WDESeasoningCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDESeasoningCollectionViewController.h; sourceTree = "<group>"; };
@@ -134,8 +131,6 @@
 				1141003B193A36A8001B397F /* WDEAppDelegate.h */,
 				1141003C193A36A8001B397F /* WDEAppDelegate.m */,
 				1141003E193A36A8001B397F /* Main.storyboard */,
-				11410041193A36A8001B397F /* WDEViewController.h */,
-				11410042193A36A8001B397F /* WDEViewController.m */,
 				1141006D193A7786001B397F /* WDESeasoningCollectionViewController.h */,
 				1141006E193A7786001B397F /* WDESeasoningCollectionViewController.m */,
 				11410070193A7960001B397F /* WDESocialSpiceViewCell.h */,
@@ -181,7 +176,7 @@
 		11410061193A3E2E001B397F /* audio */ = {
 			isa = PBXGroup;
 			children = (
-				11410064193A435D001B397F /* Neeerd.wav */,
+				11410064193A435D001B397F /* nerd.wav */,
 			);
 			name = audio;
 			sourceTree = "<group>";
@@ -264,7 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11410045193A36A8001B397F /* Images.xcassets in Resources */,
-				11410065193A435D001B397F /* Neeerd.wav in Resources */,
+				11410065193A435D001B397F /* nerd.wav in Resources */,
 				11410037193A36A8001B397F /* InfoPlist.strings in Resources */,
 				11410040193A36A8001B397F /* Main.storyboard in Resources */,
 			);
@@ -287,7 +282,6 @@
 			files = (
 				11410039193A36A8001B397F /* main.m in Sources */,
 				1141003D193A36A8001B397F /* WDEAppDelegate.m in Sources */,
-				11410043193A36A8001B397F /* WDEViewController.m in Sources */,
 				11410075193A84E3001B397F /* WDESpice.m in Sources */,
 				1141006F193A7786001B397F /* WDESeasoningCollectionViewController.m in Sources */,
 				11410072193A7960001B397F /* WDESocialSpiceViewCell.m in Sources */,
@@ -495,6 +489,7 @@
 				1141005D193A36A8001B397F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1141005E193A36A8001B397F /* Build configuration list for PBXNativeTarget "Social SeasoningTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +498,7 @@
 				11410060193A36A8001B397F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

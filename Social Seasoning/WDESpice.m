@@ -10,13 +10,16 @@
 
 @implementation WDESpice
 
-- (WDESpice *)initSpiceWithName:(NSString *)spiceName audioURL:(NSString *)audioURL {
+- (WDESpice *)initSpiceWithName:(NSString *)spiceName audioName:(NSString *)audioName audioType:(NSString *)audioType {
     
     self = [super init];
     if (self) {
         
         self.spiceName = spiceName;
-        NSURL *soundURL = [NSURL fileURLWithPath:audioURL];
+        
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:audioName
+                                                              ofType:audioType];
+        NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
         self.audioURL = soundURL;
         
     }

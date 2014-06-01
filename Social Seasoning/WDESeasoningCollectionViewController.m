@@ -9,6 +9,8 @@
 #import "WDESeasoningCollectionViewController.h"
 #import "WDESocialSpiceViewCell.h"
 #import "WDESpice.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface WDESeasoningCollectionViewController ()
 
@@ -18,15 +20,13 @@
 
 @implementation WDESeasoningCollectionViewController
 
-NSString *const HeaderReuseIdentifier = @"SeasoningHeader";
-NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.spiceRack = [NSArray arrayWithObjects:[[WDESpice alloc] initSpiceWithName:@"Neeerd!!"
-                                                                          audioURL:@"Neeerd"],
+    self.spiceRack = [NSArray arrayWithObjects: [[WDESpice alloc] initSpiceWithName:@"Neeerd!!"
+                                                                          audioName:@"nerd"
+                                                                          audioType:@"wav"],
                       nil];
     
 }
@@ -36,6 +36,12 @@ NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark -
+#pragma mark Collection View Delegate and Data Source methods
+
+NSString *const HeaderReuseIdentifier = @"SeasoningHeader";
+NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -52,8 +58,7 @@ NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
     WDESocialSpiceViewCell *currentCell = [collectionView dequeueReusableCellWithReuseIdentifier:SpiceCellReuseIdentifier
                                                                                     forIndexPath:indexPath];
     
-    [currentCell.spiceTriggerButton setTitle:currentSpice.spiceName
-                                    forState:UIControlStateNormal];
+    currentCell.spiceNameLabel.text = currentSpice.spiceName;
     return currentCell;
     
 }
@@ -69,6 +74,48 @@ NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
         
     }
     return header;
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    WDESpice *selectedSpice = [self.spiceRack objectAtIndex:indexPath.row];
+    
+    NSLog(@"Selected spice: %@", selectedSpice.spiceName);
+    
+    [self playSoundWithURL:selectedSpice.audioURL];
+    
+}
+
+#pragma mark -
+#pragma mark Core Audio Methods
+
+- (void)playSoundWithURL:(NSURL *)soundURL {
+    
+    SystemSoundID soundId;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundId);
+    AudioServicesAddSystemSoundCompletion(soundId,
+                                          NULL,
+                                          NULL,
+                                          HandleSystemSoundCompleted,
+                                          (__bridge_retained void *)self);
+    
+    /*AVURLAsset* audioAsset = [AVURLAsset URLAssetWithURL:soundURL
+                                                 options:nil];
+    CMTime audioDuration = audioAsset.duration;
+    float audioDurationSeconds = CMTimeGetSeconds(audioDuration);
+    [self animateButtonWithDuration:audioDurationSeconds];*/
+    
+    AudioServicesPlaySystemSound(soundId);
+    
+}
+
+void HandleSystemSoundCompleted(SystemSoundID soundId, void *myself) {
+    
+    NSLog(@"Handle system sound completed");
+    
+    AudioServicesRemoveSystemSoundCompletion(soundId);
+    AudioServicesDisposeSystemSoundID(soundId);
     
 }
 

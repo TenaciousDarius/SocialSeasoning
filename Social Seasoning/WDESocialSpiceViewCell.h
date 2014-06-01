@@ -10,8 +10,6 @@
 
 @interface WDESocialSpiceViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) IBOutlet UIButton *spiceTriggerButton;
-
-- (IBAction)spiceButtonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *spiceNameLabel;
 
 @end

@@ -13,6 +13,6 @@
 @property (strong, nonatomic) NSString *spiceName;
 @property (strong, nonatomic) NSURL *audioURL;
 
-- (WDESpice *)initSpiceWithName:(NSString *)spiceName audioURL:(NSString *)audioURL;
+- (WDESpice *)initSpiceWithName:(NSString *)spiceName audioName:(NSString *)audioName audioType:(NSString *)audioType;
 
 @end

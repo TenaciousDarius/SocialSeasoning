@@ -26,31 +26,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="147" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLL-H6-edC">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Neeerd!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogn-X2-Pa1">
                                             <rect key="frame" x="0.0" y="0.0" width="147" height="88"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                            <state key="normal" title="NERD!!!!">
-                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="spiceButtonPressed:" destination="uKx-0d-zxH" eventType="touchUpInside" id="pUB-Ak-hyR"/>
-                                            </connections>
-                                        </button>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="1" green="0.85098039219999999" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="vLL-H6-edC" firstAttribute="top" secondItem="uKx-0d-zxH" secondAttribute="top" id="HIx-Ea-jde"/>
-                                    <constraint firstAttribute="bottom" secondItem="vLL-H6-edC" secondAttribute="bottom" id="Tea-ll-XKQ"/>
-                                    <constraint firstItem="vLL-H6-edC" firstAttribute="leading" secondItem="uKx-0d-zxH" secondAttribute="leading" id="iMT-bD-85s"/>
-                                    <constraint firstAttribute="trailing" secondItem="vLL-H6-edC" secondAttribute="trailing" id="wjZ-DG-mob"/>
-                                </constraints>
                                 <size key="customSize" width="147" height="88"/>
                                 <connections>
-                                    <outlet property="spiceTriggerButton" destination="vLL-H6-edC" id="GII-pp-7Ml"/>
+                                    <outlet property="spiceNameLabel" destination="Ogn-X2-Pa1" id="JIy-z7-P4O"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
