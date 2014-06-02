@@ -14,6 +14,8 @@
 @interface WDESeasoningCollectionViewController ()
 
 @property (strong, nonatomic) NSArray *spiceRack;
+@property (strong, nonatomic) NSIndexPath *currentSpiceIndex;
+@property (nonatomic, assign) SystemSoundID currentSoundId;
 
 @end
 
@@ -27,6 +29,8 @@
                                                                           audioName:@"nerd"
                                                                           audioType:@"wav"],
                       nil];
+    self.currentSoundId = -1;
+    self.currentSpiceIndex = nil;
     
 }
 
@@ -78,11 +82,18 @@ NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    WDESpice *selectedSpice = [self.spiceRack objectAtIndex:indexPath.row];
+    if (indexPath == self.currentSpiceIndex) {
+        [self stopCurrentSound];
+    } else if {
     
-    NSLog(@"Selected spice: %@", selectedSpice.spiceName);
+        WDESpice *selectedSpice = [self.spiceRack objectAtIndex:indexPath.row];
+        self.currentSpiceIndex = indexPath;
     
-    [self playSoundWithURL:selectedSpice.audioURL];
+        NSLog(@"Selected spice: %@", selectedSpice.spiceName);
+    
+        [self playSoundWithURL:selectedSpice.audioURL];
+    
+    }
     
 }
 
@@ -93,6 +104,7 @@ NSString *const SpiceCellReuseIdentifier = @"SpiceCell";
     
     SystemSoundID soundId;
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundId);
+    self.currentSoundId = soundId;
     AudioServicesAddSystemSoundCompletion(soundId,
                                           NULL,
                                           NULL,
@@ -107,8 +119,23 @@ void HandleSystemSoundCompleted(SystemSoundID soundId, void *myself) {
     
     NSLog(@"Handle system sound completed");
     
-    AudioServicesRemoveSystemSoundCompletion(soundId);
-    AudioServicesDisposeSystemSoundID(soundId);
+    [(__bridge_transfer WDESeasoningCollectionViewController *)myself stopSoundWithID:soundId];
+    
+}
+
+- (void) stopCurrentSound {
+    [self stopSoundWithID:self.currentSoundId];
+}
+
+- (void) stopSoundWithID:(SystemSoundID)systemSoundId {
+    
+    AudioServicesRemoveSystemSoundCompletion(systemSoundId);
+    AudioServicesDisposeSystemSoundID(systemSoundId);
+    
+    if (systemSoundId == self.currentSoundId) {
+        self.currentSoundId = -1;
+        self.currentSpiceIndex = nil;
+    }
     
 }
 
